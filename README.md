@@ -283,7 +283,7 @@ instruction on how to do this.
 
 
 ## Links
-
+[AngularJS](http://angularjs.org/)
 [angularjs]: http://angularjs.org/
 [bower]: http://bower.io
 [npm]: https://www.npmjs.org/
