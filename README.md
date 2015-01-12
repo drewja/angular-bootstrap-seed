@@ -1,4 +1,19 @@
-# angular-seed — the seed for AngularJS apps
+# angular-seed-bootstrap — seed for AngularJS apps with Bootstrap template
+
+This is a fork of the original angular-seed, with the addition of:
+  * HTML5 style urls...
+    original seed had ugly urls app/#/ so, now configuration is /, /viewone, /viewtwo, etc.
+    the only catch to this config is that you have to configure your server (nginx) to
+    to properly pass all uris to your app. so that when a user types in exampleapp.com/viewone
+    angulars url hander will get the request. (which you usually do anyway with angular apps).
+    A working nginx config is included.
+  * configured Bootstrap template from http://getbootstrap.com/examples/starter-template/
+    fixed the navigation on small screens to toggle on click of link withour refreshing 
+    the page. (viewscommon.js)
+  * testing
+    unittest(karma): test/controllersSpec.js  and  end-to-end(protractor): e2e-tests/scenarios.js
+  * nginx config with deployment instructions
+  * changed the module structure a bit
 
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
 You can use it to quickly bootstrap your angular webapp projects and dev environment for these
@@ -6,37 +21,39 @@ projects.
 
 The seed contains a sample AngularJS application and is preconfigured to install the Angular
 framework and a bunch of development and testing tools for instant web development gratification.
+## Including
+  * http-server (for development use)
+  * karma / jasmine (unit testing)
+  * protractor / jasmine (end to end testing)
 
-The seed app doesn't do much, just shows how to wire two controllers and views together.
-
+The seed app shows how to wire controllers, views, and two forms of testing together.
 
 ## Getting Started
 
-To get you started you can simply clone the angular-seed repository and install the dependencies:
+To get you started you can simply clone the angular-seed-bootstrap repository and install the dependencies:
 
 ### Prerequisites
 
-You need git to clone the angular-seed repository. You can get git from
+You need git to clone the angular-seed-bootstrap repo. You can get git from
 [http://git-scm.com/](http://git-scm.com/).
 
 We also use a number of node.js tools to initialize and test angular-seed. You must have node.js and
 its package manager (npm) installed.  You can get them from [http://nodejs.org/](http://nodejs.org/).
 
-### Clone angular-seed
+### Clone angular-seed-bootstrap
 
-Clone the angular-seed repository using [git][git]:
+Clone the angular-seed-bootstrap repository using [git][git]:
 
 ```
-git clone https://github.com/angular/angular-seed.git
+git clone https://github.com/drewja/angular-seed-bootstrap.git
 cd angular-seed
 ```
 
-If you just want to start a new project without the angular-seed commit history then you can do:
+If you just want to start a new project without the angular-seed-bootstrap commit history then you can do:
 
 ```bash
-git clone --depth=1 https://github.com/angular/angular-seed.git <your-project-name>
+git clone --depth=1 https://github.com/drewja/angular-seed-bootstrap.git <your-project-name>
 ```
-
 The `depth=1` tells git to only pull down one commit worth of historical data.
 
 ### Install Dependencies
@@ -46,7 +63,8 @@ us manage and test the application.
 
 * We get the tools we depend upon via `npm`, the [node package manager][npm].
 * We get the angular code via `bower`, a [client-side code package manager][bower].
-
+* optionaly deploy with nginx
+* 
 We have preconfigured `npm` to automatically run `bower` so we can simply do:
 
 ```
@@ -72,7 +90,7 @@ this server is:
 npm start
 ```
 
-Now browse to the app at `http://localhost:8000/app/index.html`.
+Now browse to the app at `http://localhost:8000/'.
 
 
 
@@ -89,14 +107,10 @@ app/                    --> all of the source files for the application
       version-directive_test.js  --> version directive tests
       interpolate-filter.js      --> custom interpolation filter
       interpolate-filter_test.js --> interpolate filter tests
-  view1/                --> the view1 view template and logic
+  view1/                --> the view1 view template
     view1.html            --> the partial template
-    view1.js              --> the controller logic
-    view1_test.js         --> tests of the controller
-  view2/                --> the view2 view template and logic
+  view2/                --> the view2 view template
     view2.html            --> the partial template
-    view2.js              --> the controller logic
-    view2_test.js         --> tests of the controller
   app.js                --> main application module
   index.html            --> app layout file (the main html template file of the app)
   index-async.html      --> just like index.html, but loads js files asynchronously
@@ -178,10 +192,6 @@ development server.
 
 ## Updating Angular
 
-Previously we recommended that you merge in changes to angular-seed into your own fork of the project.
-Now that the angular framework library code and tools are acquired through package managers (npm and
-bower) you can use these tools instead to update the dependencies.
-
 You can update the tool dependencies by running:
 
 ```
@@ -237,7 +247,7 @@ Then you can start your own development web server to serve static files from a 
 running:
 
 ```
-http-server -a localhost -p 8000
+http-server app -a localhost -p 8000
 ```
 
 Alternatively, you can choose to configure your own webserver, such as apache or nginx. Just
@@ -271,22 +281,9 @@ tests when you push to GitHub.
 You will need to enable the integration between Travis and GitHub. See the Travis website for more
 instruction on how to do this.
 
-### CloudBees
 
-CloudBees have provided a CI/deployment setup:
-
-<a href="https://grandcentral.cloudbees.com/?CB_clickstart=https://raw.github.com/CloudBees-community/angular-js-clickstart/master/clickstart.json">
-<img src="https://d3ko533tu1ozfq.cloudfront.net/clickstart/deployInstantly.png"/></a>
-
-If you run this, you will get a cloned version of this repo to start working on in a private git repo,
-along with a CI service (in Jenkins) hosted that will run unit and end to end tests in both Firefox and Chrome.
-
-
-## Contact
-
-For more information on AngularJS please check out http://angularjs.org/
-
-[git]: http://git-scm.com/
+## Links
+[angularjs]: http://angularjs.org/
 [bower]: http://bower.io
 [npm]: https://www.npmjs.org/
 [node]: http://nodejs.org
@@ -295,3 +292,4 @@ For more information on AngularJS please check out http://angularjs.org/
 [karma]: http://karma-runner.github.io
 [travis]: https://travis-ci.org/
 [http-server]: https://github.com/nodeapps/http-server
+[nginx]: http://nginx.com
