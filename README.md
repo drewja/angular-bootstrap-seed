@@ -284,13 +284,12 @@ instruction on how to do this.
 
 ## Links
 [AngularJS](http://angularjs.org/)
-[angularjs]: http://angularjs.org/
-[bower]: http://bower.io
-[npm]: https://www.npmjs.org/
-[node]: http://nodejs.org
-[protractor]: https://github.com/angular/protractor
-[jasmine]: http://jasmine.github.io
-[karma]: http://karma-runner.github.io
-[travis]: https://travis-ci.org/
-[http-server]: https://github.com/nodeapps/http-server
-[nginx]: http://nginx.com
+[bower](http://bower.io)
+[npm](https://www.npmjs.org/)
+[node](http://nodejs.org)
+[protractor](https://github.com/angular/protractor)
+[jasmine](http://jasmine.github.io)
+[karma](http://karma-runner.github.io)
+[travis](https://travis-ci.org/)
+[http-server](https://github.com/nodeapps/http-server)
+[nginx](http://nginx.com)
