@@ -1,5 +1,5 @@
 # angular-bootstrap-seed — seed for AngularJS apps with Bootstrap template
-
+[https://travis-ci.org/drewja/angular-bootstrap-seed](https://travis-ci.org/drewja/angular-bootstrap-seed)
 This is a fork of the original angular-seed, with the addition of:
   * HTML5 style urls...
     original seed had ugly urls app/#/ so, now configuration is /, /viewone, /viewtwo, etc.
