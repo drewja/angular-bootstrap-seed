@@ -1,5 +1,6 @@
 # angular-bootstrap-seed — seed for AngularJS apps with Bootstrap template
-[https://travis-ci.org/drewja/angular-bootstrap-seed]:(https://travis-ci.org/drewja/angular-bootstrap-seed)
+[https://travis-ci.org/drewja/angular-bootstrap-seed](https://travis-ci.org/drewja/angular-bootstrap-seed) Travis-ci continuous integration builds.
+
 This is a fork of the original angular-seed, with the addition of:
   * HTML5 style urls...
     original seed had ugly urls app/#/ so, now configuration is /, /viewone, /viewtwo, etc.
@@ -284,14 +285,15 @@ instruction on how to do this.
 
 
 ## Links
-[AngularJS ](http://angularjs.org/)
-[ Bootstrap ](http://getbootstrap.com/)
-[ bower ](http://bower.io)
-[ npm ](https://www.npmjs.org/)
-[ node ](http://nodejs.org)
-[ protractor ](https://github.com/angular/protractor)
-[ jasmine ](http://jasmine.github.io)
-[ karma ](http://karma-runner.github.io)
-[ travis ](https://travis-ci.org/)
-[ http-server ](https://github.com/nodeapps/http-server)
-[ nginx](http://nginx.com)
+[AngularJS ](http://angularjs.org/)  
+[ Bootstrap ](http://getbootstrap.com/)  
+[ bower ](http://bower.io)  
+[ npm ](https://www.npmjs.org/)  
+[ node ](http://nodejs.org)  
+[ protractor ](https://github.com/angular/protractor)  
+[ jasmine ](http://jasmine.github.io)  
+[ karma ](http://karma-runner.github.io)  
+[ travis ](https://travis-ci.org/)  
+[ http-server ](https://github.com/nodeapps/http-server)  
+[ nginx](http://nginx.com)  
+
