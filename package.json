@@ -1,9 +1,9 @@
 {
-  "name": "angular-seed",
+  "name": "angular-bootstrap-seed",
   "private": true,
-  "version": "0.0.0",
-  "description": "A starter project for AngularJS with Bootstrap template",
-  "repository": "https://github.com/drewja/angular-seed-bootstrap",
+  "version": "0.0.2",
+  "description": "A starter project for AngularJS with Bootstrap template and HTML5 uri",
+  "repository": "https://github.com/drewja/angular-bootstrap-seed",
   "license": "MIT",
   "devDependencies": {
     "http-server": "~0.7.4",
@@ -15,17 +15,13 @@
   },
   "scripts": {
     "postinstall": "bower install",
-
     "prestart": "npm install",
     "start": "http-server 'app' -a localhost -p 8000 -c-1",
-
     "pretest": "npm install",
     "test": "karma start karma.conf.js",
     "test-single-run": "karma start karma.conf.js  --single-run",
-
     "preupdate-webdriver": "npm install",
     "update-webdriver": "webdriver-manager update",
-
     "preprotractor": "npm run update-webdriver",
     "protractor": "protractor e2e-tests/protractor.conf.js",
 
