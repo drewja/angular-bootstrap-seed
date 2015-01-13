@@ -1,5 +1,5 @@
 # angular-bootstrap-seed — seed for AngularJS apps with Bootstrap template
-[https://travis-ci.org/drewja/angular-bootstrap-seed](https://travis-ci.org/drewja/angular-bootstrap-seed) Travis-ci continuous integration builds.
+[![Build Status](https://travis-ci.org/drewja/angular-bootstrap-seed.svg?branch=master)](https://travis-ci.org/drewja/angular-bootstrap-seed)
 
 This is a fork of the original angular-seed, with the addition of:
   * HTML5 style urls...
