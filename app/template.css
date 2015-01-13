@@ -1,7 +1,14 @@
 body {
   padding-top: 50px;
 }
+
 .starter-template {
   padding: 40px 15px;
   text-align: center;
 }
+.navbar-brand > span > img{
+  margin-top:-5px;
+  height:35px;
+  padding:5px;
+}
+
